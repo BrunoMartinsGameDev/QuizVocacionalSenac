@@ -1,0 +1,154 @@
+.home-container {
+  min-height: calc(100vh - 82px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0fe 100%);
+}
+
+.home-content {
+  max-width: 700px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease;
+}
+
+.logo-section {
+  margin-bottom: 2rem;
+}
+
+.home-logo {
+  width: 180px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.home-title {
+  font-size: 3rem;
+  color: #004C94;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #F7941E;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.courses-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.course-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-badge:hover {
+  transform: translateY(-3px);
+}
+
+.course-icon {
+  font-size: 1.3rem;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background: linear-gradient(135deg, #F7941E 0%, #ff8800 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(247, 148, 30, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(247, 148, 30, 0.4);
+}
+
+.start-button:active {
+  transform: translateY(0);
+}
+
+.home-footer {
+  margin-top: 2rem;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home-logo {
+    width: 140px;
+  }
+
+  .courses-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-badge {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .start-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
