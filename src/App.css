@@ -8,3 +8,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.credits{
+    position:fixed;
+    bottom:12px;
+    right:18px;
+    color:#888;
+    font-size:1em;
+    z-index:10;
+    pointer-events:none;
+    user-select:none;
+  }

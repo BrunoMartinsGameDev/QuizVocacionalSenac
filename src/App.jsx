@@ -18,6 +18,7 @@ function App() {
           <Route path="/curso/:courseId" element={<CourseDetails />} />
         </Routes>
       </div>
+      <footer className='credits'>Made by Prof Bruno Martins</footer>
     </Router>
   );
 }
