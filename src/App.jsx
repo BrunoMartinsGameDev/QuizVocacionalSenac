@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/QuizVocacionalSenac">
       <div className="app">
         <Header />
         <Routes>

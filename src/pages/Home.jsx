@@ -7,7 +7,7 @@ function Home() {
       <div className="home-content">
         <div className="logo-section">
           <img 
-            src="/LogoSenacColoridaQuadrada.png" 
+            src="LogoSenacColoridaQuadrada.png" 
             alt="Senac" 
             className="home-logo"
           />

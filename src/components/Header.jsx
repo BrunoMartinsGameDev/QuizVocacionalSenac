@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <Link to="/" className="logo-link">
         <img 
-          src="/LogoSenacBrancaRetangular.png" 
+          src="LogoSenacBrancaRetangular.png" 
           alt="Senac Logo" 
           className="logo"
         />
