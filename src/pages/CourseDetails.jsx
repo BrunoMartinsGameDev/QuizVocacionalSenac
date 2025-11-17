@@ -55,7 +55,7 @@ function CourseDetails() {
           </section>
 
           <div className="course-actions">
-            <Link to="/" className="action-button primary" style={{ backgroundColor: course.color }}>
+            <Link to="/quiz" className="action-button primary" style={{ backgroundColor: course.color }}>
               Fazer o Quiz
             </Link>
             <Link to="/" className="action-button secondary">

@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
+  const navigate = useNavigate();
+  function handleCourseClick(cursoId){
+    navigate(`/curso/${cursoId}`);
+  }
+
   return (
     <div className="home-container">
       <div className="home-content">
@@ -22,15 +27,15 @@ function Home() {
         </p>
 
         <div className="courses-preview">
-          <div className="course-badge" style={{ backgroundColor: '#004C94' }}>
+          <div onClick={() => handleCourseClick('jogos')} className="course-badge" style={{ backgroundColor: '#004C94', cursor: 'pointer' }}>
             <span className="course-icon">🎮</span>
             <span>Jogos Digitais</span>
           </div>
-          <div className="course-badge" style={{ backgroundColor: '#F7941E' }}>
+          <div onClick={() => handleCourseClick('sistemas')} className="course-badge" style={{ backgroundColor: '#F7941E', cursor: 'pointer' }}>
             <span className="course-icon">💻</span>
             <span>Desenvolvimento de Sistemas</span>
           </div>
-          <div className="course-badge" style={{ backgroundColor: '#FBC483' }}>
+          <div onClick={() => handleCourseClick('multimidia')} className="course-badge" style={{ backgroundColor: '#FBC483', cursor: 'pointer' }}>
             <span className="course-icon">🎨</span>
             <span>Multimídia</span>
           </div>
